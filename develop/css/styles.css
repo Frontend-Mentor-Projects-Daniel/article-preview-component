@@ -58,13 +58,21 @@ select {
 **   CUSTOM PROPS
 --------------------*/
 :root {
-/* COLOURS */
+  /* COLOURS */
+  --clr-very-dark-grayish-blue: 217, 19%, 35%;
+  --clr-desaturated-dark-blue: 214, 17%, 51%;
+  --clr-grayish-blue: 212, 23%, 69%;
+  --clr-light-grayish-blue: 210, 46%, 95%;
 
   /* FONT FAMILY */
+  --ff-manrope: 'Manrope', sans-serif;
 
   /* FONT SIZE */
+  --fs-default: 0.8125rem;
 
   /* FONT WEIGHT */
+  --fw-medium: 500;
+  --fw-bold: 700;
 
   /* BREAKPOINTS */
 }
@@ -77,13 +85,55 @@ select {
 **     GENERAL
 --------------------*/
 body {
+  font-family: var(--ff-manrope);
+  font-size: var(--fs-default);
+  font-weight: var(--fw-medium);
 }
 
 .main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
 
-  width: 100vw;
-  min-height: 100vh;
+/**----------------------
+** ARTICLE PREVIEW CARD
+-----------------------*/
+.article-preview-card {
+}
+
+/**------------------
+**    APC IMAGE
+-------------------*/
+.article-preview-card__image {
+}
+
+/**------------------
+**   APC CONTENT
+-------------------*/
+.article-preview-card__content {
+}
+
+.article-preview-card__header {
+}
+
+.article-preview-card__text {
+}
+
+/**------------------
+**      USER
+-------------------*/
+.user {
+}
+
+.user__image {
+}
+
+.user__information {
+}
+
+.user__share-icon {
+}
+
+.user__social-media-icons {
+}
+
+.user__social-media-icon {
 }
