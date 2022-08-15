@@ -80,6 +80,9 @@ select {
 /**------------------- 
 **    UTILITIES
 --------------------*/
+.hide {
+  display: none;
+}
 
 /**------------------- 
 **     GENERAL
@@ -133,6 +136,7 @@ body {
 }
 
 .user__social-media-icons {
+  background-color: gray;
 }
 
 .user__social-media-icon {
