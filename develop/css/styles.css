@@ -125,10 +125,21 @@ body {
   width: clamp(23ch, 100%, 46ch);
 }
 
+@media only screen and (min-width: 48em) {
+  .article-preview-card {
+    flex-direction: row;
+    width: clamp(94ch, 100%, 97ch);
+  }
+}
+
 /**------------------
 **    APC IMAGE
 -------------------*/
-.article-preview-card__image {
+@media only screen and (min-width: 48em) {
+  .article-preview-card__image img {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 /**------------------
@@ -152,6 +163,12 @@ body {
   color: hsl(var(--clr-desaturated-dark-blue));
   font-size: 0.978rem;
   line-height: 1.5625rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .article-preview-card__header {
+    font-size: 1.3rem;
+  }
 }
 
 /**------------------
