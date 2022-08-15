@@ -88,59 +88,73 @@
             </button>
           </div>
 
-          <div class="user__social-media-icons hide">
-            <span>share</span>
+          <div class="share-block">
+            <div class="user__social-media-icons">
+              <span class="user__share-text">share</span>
 
-            <a href="#" aria-labelledby="label--facebook">
-              <svg
-                class="user__social-media-icon facebook"
-                focusable="false"
-                aria-hidden="true"
-              >
+              <a href="#" class="image-link" aria-labelledby="label--facebook">
+                <svg
+                  class="user__social-media-icon facebook"
+                  focusable="false"
+                  aria-hidden="true"
+                >
+                  <use
+                    xlink:href="./develop/assets/images/sprite.svg#icon-facebook"
+                  ></use>
+                </svg>
+                <span id="label--facebook" hidden>Facebook link</span>
+              </a>
+
+              <a href="#" class="image-link" aria-labelledby="label--twitter">
+                <svg
+                  class="user__social-media-icon twitter"
+                  focusable="false"
+                  aria-hidden="true"
+                >
+                  <use
+                    xlink:href="./develop/assets/images/sprite.svg#icon-twitter"
+                  ></use>
+                </svg>
+                <span id="label--twitter" hidden>Twitter link</span>
+              </a>
+
+              <a href="#" class="image-link" aria-labelledby="label--pinterest">
+                <svg
+                  class="user__social-media-icon pinterest"
+                  focusable="false"
+                  aria-hidden="true"
+                >
+                  <use
+                    xlink:href="./develop/assets/images/sprite.svg#icon-pinterest"
+                  ></use>
+                </svg>
+                <span id="label--pinterest" hidden>Pinterest link</span>
+              </a>
+            </div>
+
+            <button
+              class="user__share-icon user__share-icon--mobile"
+              aria-labelledby="label--share-icon"
+            >
+              <span id="label--share-icon" hidden>Share</span>
+              <svg focusable="false" aria-hidden="true">
                 <use
-                  xlink:href="./develop/assets/images/sprite.svg#icon-facebook"
+                  xlink:href="./develop/assets/images/sprite.svg#icon-share"
                 ></use>
               </svg>
-              <span id="label--facebook" hidden>Facebook link</span>
-            </a>
-
-            <a href="#" aria-labelledby="label--twitter">
-              <svg
-                class="user__social-media-icon twitter"
-                focusable="false"
-                aria-hidden="true"
-              >
-                <use
-                  xlink:href="./develop/assets/images/sprite.svg#icon-twitter"
-                ></use>
-              </svg>
-              <span id="label--twitter" hidden>Twitter link</span>
-            </a>
-
-            <a href="#" aria-labelledby="label--pinterest">
-              <svg
-                class="user__social-media-icon pinterest"
-                focusable="false"
-                aria-hidden="true"
-              >
-                <use
-                  xlink:href="./develop/assets/images/sprite.svg#icon-pinterest"
-                ></use>
-              </svg>
-              <span id="label--pinterest" hidden>Pinterest link</span>
-            </a>
+            </button>
           </div>
         </div>
       </div>
     </main>
 
-    <!-- <footer>
+    <footer>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by <a href="#">Daniel Arzanipour</a>.
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
