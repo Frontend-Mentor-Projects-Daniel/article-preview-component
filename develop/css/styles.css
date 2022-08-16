@@ -83,7 +83,6 @@ select {
 }
 
 .sr-only {
-  position: absolute;
   position: absolute !important;
   width: 1px !important;
   height: 1px !important;
@@ -129,8 +128,6 @@ body {
 /**----------------------
 ** ARTICLE PREVIEW CARD
 -----------------------*/
-/* .article-preview-card__wrapper */
-
 .article-preview-card {
   display: flex;
   flex-direction: column;
@@ -309,9 +306,10 @@ body {
   .share-block {
     position: absolute;
     top: 10.063rem;
-    right: -34px;
+    right: -5.125rem;
 
     border-radius: 10px;
+    min-width: 15.625rem;
     padding: 1rem;
   }
 
@@ -328,7 +326,8 @@ body {
   }
 
   .user__social-media-icons {
-    gap: 0.5rem;
+    justify-content: center;
+    gap: 1.5rem;
   }
 
   .user__share-icon--mobile {

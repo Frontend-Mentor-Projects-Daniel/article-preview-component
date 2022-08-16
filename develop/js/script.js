@@ -1,25 +1,16 @@
-// TODO
-// 1) make animation for tooltip pop up
-// 2) when screen resizes or anywhere else is clicked close popup
-
 const btnShares = document.querySelectorAll('[data-btn-share]');
 const btnShareDesktop = btnShares[0];
 const btnShareMobile = btnShares[1];
-console.log(btnShareDesktop);
-console.log(btnShareMobile);
-// const btnShareMobile = document.querySelector('[data-btn-share-mobile]');
 const userBlock = document.querySelector('[data-block-user]');
 const shareBlock = document.querySelector('[data-block-share]');
 const screen = document.body;
 
-const handleClickDesktop = (e) => {};
-
-const handleClickMobile = (e) => {};
-
+// cause pop-up to appear differently depending on whether user is viewing component on a mobile size viewport or not
 const handleClick = (e) => {
   const observer = new ResizeObserver((entries) => {
     const body = entries[0];
     const isMobile = body.contentRect.width < 768;
+
     if (isMobile) {
       userBlock.classList.toggle('hide');
       shareBlock.classList.toggle('hide');
