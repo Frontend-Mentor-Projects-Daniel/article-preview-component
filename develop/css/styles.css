@@ -79,7 +79,7 @@ select {
 **    UTILITIES
 --------------------*/
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .sr-only {
@@ -111,12 +111,6 @@ body {
 
   min-height: 100vh;
 }
-/* .main > .article-preview-card__wrapper {
-  display: grid;
-  place-items: center;
-
-  min-height: 100vh;
-} */
 
 /* links with icons in them */
 .image-link {
